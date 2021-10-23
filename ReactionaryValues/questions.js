@@ -81,16 +81,16 @@ questions = [
         }
     },
     {
-        "question": "I wanna be controlled.",
+        "question": "Might makes Right!.",
         "effect": {
             "econ": 0,
-            "dipl": 0,
-            "govt": -10,
+            "dipl": -15,
+            "govt": -15,
             "scty": 0
         }
     },
     {
-        "question": "Chaos is good!",
+        "question": "Don't tread on me.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -99,11 +99,11 @@ questions = [
         }
     },
     {
-        "question": "Supervising people isn't immortal",
+        "question": "I purge the weaks.",
         "effect": {
-            "econ": 0,
+            "econ": -15,
             "dipl": 0,
-            "govt": -10,
+            "govt": 0,
             "scty": 0
         }
     },
@@ -126,12 +126,12 @@ questions = [
         }
     },
     {
-        "question": "Forgive is a good personality. ",
+        "question": "Reactionarism with Democracy is a good idea.",
         "effect": {
             "econ": 0,
             "dipl": 0,
             "govt": 0,
-            "scty": 5
+            "scty": 10
         }
     },
     {
@@ -153,7 +153,7 @@ questions = [
         }
     },
     {
-        "question": "A painful Society is acceptable.",
+        "question": "Dark Enlightenment isn't a good idea.",
         "effect": {
             "econ": 0,
             "dipl": 0,
