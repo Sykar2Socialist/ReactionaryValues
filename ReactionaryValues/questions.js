@@ -1,6 +1,6 @@
 questions = [
     {
-        "question": "Rich makes right.",
+        "question": "Feudalism is a literally good idea.",
         "effect": {
             "econ": -10,
             "dipl": 0,
@@ -9,16 +9,7 @@ questions = [
         }
     },
     {
-        "question": "Greedy is a good personality!",
-        "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Riches have to help poors. ",
+        "question": "Socialism is a good idea.",
         "effect": {
             "econ": 10,
             "dipl": 0,
@@ -27,16 +18,25 @@ questions = [
         }
     },
     {
-        "question": "Be Niceness, not Cruel.",
+        "question": "I prefer Fourth Theory than Reactionary Libertarianism. ",
         "effect": {
-            "econ": 0,
+            "econ": 10,
             "dipl": 0,
             "govt": 0,
-            "scty": 10
+            "scty": 0
         }
     },
     {
-        "question": "Torturing people and let them feel pain is good.",
+        "question": "Deus Vult!",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": 0,
+            "scty": 0
+        }
+    },
+    {
+        "question": "Theocracy is a literally good idea!",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -45,7 +45,7 @@ questions = [
         }
     },
     {
-        "question": "If there's death penalty, Gun shot is better than Ling Chi.",
+        "question": "The Cathedral means Elites.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -54,7 +54,7 @@ questions = [
         }
     },
     {
-        "question": "Humanitarianism isn't exist in my eyes.",
+        "question": "Post-Libertarianism is worse than Reactionary Libertarianism.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -72,7 +72,7 @@ questions = [
         }
     },
     {
-        "question": "Party always right!.",
+        "question": "State is exist.",
         "effect": {
             "econ": 0,
             "dipl": 0,
