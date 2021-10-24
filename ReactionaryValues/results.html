@@ -117,19 +117,19 @@ stats"></a></div></noscript>
     totality = (100 - liberty ).toFixed(1)
     orthodox = (100 - revisionary).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
+    setBarValue("social", social)
+    setBarValue("feudal", feudal)
     setBarValue("peace", peace)
     setBarValue("might", might)
     setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("totality", totality)
+    setBarValue("revisionary", progress)
+    setBarValue("orthodox", orthodox)
 
     document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
+    document.getElementById("pacific-label").innerHTML = setLabel(peace, diplArray)
     document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+    document.getElementById("society-label").innerHTML = setLabel(revisionary, sctyArray)
 
     ideology = ""
     ideodist = Infinity
@@ -184,9 +184,9 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
-        ctx.fillStyle="#f44336"
+        ctx.fillStyle="#680F0B"
         ctx.fillRect(120, 184, 5.6*equality-2, 72)
-        ctx.fillStyle="#00897b"
+        ctx.fillStyle="#1557d1"
         ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
         ctx.fillStyle="#ff9800"
         ctx.fillRect(120, 304, 5.6*might-2, 72)
@@ -196,7 +196,7 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 424, 5.6*liberty-2, 72)
         ctx.fillStyle="#3f51b5"
         ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
-        ctx.fillStyle="#8bc34a"
+        ctx.fillStyle="##1b0045"
         ctx.fillRect(120, 544, 5.6*tradition-2, 72)
         ctx.fillStyle="#9c27b0"
         ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
