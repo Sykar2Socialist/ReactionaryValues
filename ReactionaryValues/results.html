@@ -91,10 +91,10 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Egalitarianist","Distributist","Centrist","Capitalist","Wealthyist","Avaritionalist"]
-    diplArray = ["Lifeist","Exist","Meanful","Neutral","Meanless","Nihilist","Voidist"]
-    govtArray = ["Chaos","Mobs","Liberal","Moderate","Security","Puppet","Muzan"]
-    sctyArray = ["Heaven","Respect","Sithy Moral","Neutral","Sighty immoral","Cruel","Satanic"]
+    econArray = ["Recationary Socialist","Recationary Egalitarianist"," Recationary Distributist","Centrist","Recationary Capitalist","Feudalist","Post-Feudalist"]
+    diplArray = ["Peaceful","Price","Non-Agressive","Neutral","Millitaryist","Deus Vult","War Crime"]
+    govtArray = ["Anarchy","Libertarian","Liberal","Moderate","Security","Authoritarian","Totalitarian"]
+    sctyArray = ["Revisionary Reactionaryist","Semi-Revisionary Reactionaryist","Sighty-Revisionary Reactionaryist","Neutral","Sighty-Orthodox Reactionaryist","Semi-Orthodox Reactionaryist","Orthodox Reactionaryist"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -108,14 +108,14 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
+    social  = getQueryVariable("e")
     peace     = getQueryVariable("d")
     liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
+    revisionary  = getQueryVariable("s")
+    feudal    = (100 - social).toFixed(1)
     might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    totality = (100 - liberty ).toFixed(1)
+    orthodox = (100 - revisionary).toFixed(1)
 
     setBarValue("equality", equality)
     setBarValue("wealth", wealth)
