@@ -162,9 +162,9 @@ stats"></a></div></noscript>
         ctx.fillStyle = "#EEEEEE"
         ctx.fillRect(0,0,800,650);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-social")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-wealth")
+        img = document.getElementById("img-feudal")
         ctx.drawImage(img, 680, 170, 100, 100)
         img = document.getElementById("img-might")
         ctx.drawImage(img, 20, 290, 100, 100)
@@ -172,11 +172,11 @@ stats"></a></div></noscript>
         ctx.drawImage(img, 680, 290, 100, 100)
         img = document.getElementById("img-liberty")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-authority")
+        img = document.getElementById("img-totality")
         ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-tradition")
+        img = document.getElementById("img-orthodox")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-progress")
+        img = document.getElementById("img-revisionary")
         ctx.drawImage(img, 680, 530, 100, 100)
 
         ctx.fillStyle="#222222"
@@ -185,9 +185,9 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillStyle="#680F0B"
-        ctx.fillRect(120, 184, 5.6*equality-2, 72)
+        ctx.fillRect(120, 184, 5.6*social-2, 72)
         ctx.fillStyle="#1557d1"
-        ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
+        ctx.fillRect(682-5.6*feudal, 184, 5.6*feudal-2, 72)
         ctx.fillStyle="#ff9800"
         ctx.fillRect(120, 304, 5.6*might-2, 72)
         ctx.fillStyle="#03a9f4"
@@ -195,36 +195,36 @@ stats"></a></div></noscript>
         ctx.fillStyle="#ffeb3b"
         ctx.fillRect(120, 424, 5.6*liberty-2, 72)
         ctx.fillStyle="#3f51b5"
-        ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
+        ctx.fillRect(682-5.6*totality, 424, 5.6*totality-2, 72)
         ctx.fillStyle="##1b0045"
-        ctx.fillRect(120, 544, 5.6*tradition-2, 72)
-        ctx.fillStyle="#9c27b0"
-        ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
+        ctx.fillRect(120, 544, 5.6*orthodox-2, 72)
+        ctx.fillStyle="#000000"
+        ctx.fillRect(682-5.6*revisionary, 544, 5.6*revisionary-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("MonkeValues", 20, 90)
+        ctx.fillText("ReactionaryValues", 20, 90)
         ctx.font="50px Montserrat"
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
+        if (social  > 30) {ctx.fillText(social + "%", 130, 237.5)}
         if (might     > 30) {ctx.fillText(might + "%", 130, 357.5)}
         if (liberty   > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
-        if (tradition > 30) {ctx.fillText(tradition + "%", 130, 597.5)}
+        if (orthodox > 30) {ctx.fillText(orthodox + "%", 130, 597.5)}
         ctx.textAlign="right"
-        if (wealth    > 30) {ctx.fillText(wealth + "%", 670, 237.5)}
+        if (feudal    > 30) {ctx.fillText(feudal + "%", 670, 237.5)}
         if (peace     > 30) {ctx.fillText(peace + "%", 670, 357.5)}
-        if (authority > 30) {ctx.fillText(authority + "%", 670, 477.5)}
-        if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
+        if (totality > 30) {ctx.fillText(totality + "%", 670, 477.5)}
+        if (revisionary  > 30) {ctx.fillText(revisionary + "%", 670, 597.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("ReactionaryValues.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
         ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
-        ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
+        ctx.fillText("Pacific Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
+        ctx.fillText("Authority Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
         ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
 
         document.getElementById("banner").src = c.toDataURL();
