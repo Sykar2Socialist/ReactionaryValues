@@ -36,16 +36,7 @@ questions = [
         }
     },
     {
-        "question": "Theocracy is a literally good idea!",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "The Cathedral means Elites.",
+        "question": "Lassiez-Faire is a literally good idea!",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -54,7 +45,16 @@ questions = [
         }
     },
     {
-        "question": "Post-Libertarianism is worse than Reactionary Libertarianism.",
+        "question": "I believe Dark-Enlightenment.",
+        "effect": {
+            "econ": 0,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 10
+        }
+    },
+    {
+        "question": "Austrolibertarianism shouldn't mixed with Reactionarism",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -117,7 +117,7 @@ questions = [
         }
     },
     {
-        "question": "Dead is the best way to leave the pain.",
+        "question": "There's no War Crime.",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -126,7 +126,7 @@ questions = [
         }
     },
     {
-        "question": "Reactionarism with Democracy is a good idea.",
+        "question": "Reactionarism with Market is a good idea.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -144,7 +144,7 @@ questions = [
         }
     },
     {
-        "question": "I love Lights and kind.",
+        "question": "I oppose Enlightenment except Free Market",
         "effect": {
             "econ": 0,
             "dipl": 5,
