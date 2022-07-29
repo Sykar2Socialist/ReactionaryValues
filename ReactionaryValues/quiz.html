@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>NullValues  Quiz</title>
+<title>ReactionaryValues  Quiz</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -17,7 +17,7 @@
 <script type="application/javascript"
         src="questions.js">
 </script>
-<h1>MonkeValues</h1>
+<h1>ReactionaryValues</h1>
 <hr>
 <h2 style="text-align:center;" id="question-number">Loading...</h2>
 <p class="question" id="question-text"></p>
@@ -57,9 +57,9 @@ stats"></a></div></noscript>
     init_question();
     for (var i = 0; i < questions.length; i++) {
         max_econ += Math.abs(questions[i].effect.econ)
-        max_dipl += Math.abs(questions[i].effect.dipl)
+        max_prop += Math.abs(questions[i].effect.prop)
         max_govt += Math.abs(questions[i].effect.govt)
-        max_scty += Math.abs(questions[i].effect.scty)
+        max_tech += Math.abs(questions[i].effect.tech)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -76,9 +76,9 @@ stats"></a></div></noscript>
 
     function next_question(mult) {
         econ += mult*questions[qn].effect.econ
-        dipl += mult*questions[qn].effect.dipl
+        prop += mult*questions[qn].effect.prop
         govt += mult*questions[qn].effect.govt
-        scty += mult*questions[qn].effect.scty
+        tech += mult*questions[qn].effect.tech
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -93,9 +93,9 @@ stats"></a></div></noscript>
         }
         qn--;
         econ -= prev_answer * questions[qn].effect.econ;
-        dipl -= prev_answer * questions[qn].effect.dipl;
+        prop -= prev_answer * questions[qn].effect.prop;
         govt -= prev_answer * questions[qn].effect.govt;
-        scty -= prev_answer * questions[qn].effect.scty;
+        tech -= prev_answer * questions[qn].effect.tech;
         prev_answer = null;
         init_question();
 
@@ -106,9 +106,9 @@ stats"></a></div></noscript>
     function results() {
         location.href = `results.html`
             + `?e=${calc_score(econ,max_econ)}`
-            + `&d=${calc_score(dipl,max_dipl)}`
+            + `&d=${calc_score(dipl,max_prop)}`
             + `&g=${calc_score(govt,max_govt)}`
-            + `&s=${calc_score(scty,max_scty)}`
+            + `&s=${calc_score(scty,max_tech)}`
     }
 </script>
 </body>
